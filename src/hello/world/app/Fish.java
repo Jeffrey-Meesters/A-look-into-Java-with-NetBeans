@@ -9,22 +9,17 @@ package hello.world.app;
  *
  * @author jeffrey
  */
-public abstract class Fish implements ViewFish {
+class Fish implements ViewFish {
     
-    boolean hungry = false;
     int speed = 0;
     
-    public void eat(boolean newValue) {
-        hungry = newValue;
+    
+    public void speedUp(int increment) {
+         speed = speed + increment;   
     }
     
-    public void swimSpeed(int increment) {
-        speed = speed + increment;
-    }
-    
-    public static void main(String[] args){
-            System.out.println("hungry:" +
-                hungry + " speed:" + 
-                speed);
+    void printStates() {
+        System.out.println(" speed:" + 
+            speed);
     }
 }

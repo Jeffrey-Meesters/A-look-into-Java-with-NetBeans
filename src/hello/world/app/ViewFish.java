@@ -9,8 +9,6 @@ package hello.world.app;
  *
  * @author jeffrey
  */
-public interface ViewFish {
-    void swimSpeed(int increment);
-    
-    void eat(boolean newValue);
+interface ViewFish {
+    void speedUp(int increment);
 }
