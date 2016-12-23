@@ -40,5 +40,28 @@ public class ArithmeticDemo {
         result = result % 7;
         // result is now 3
         System.out.println(original_result + " % 7 = " + result);
+        
+        // Unary Operators:
+                int result2 = +1;
+        // result is now 1
+        System.out.println(result2);
+
+        result2--;
+        // result is now 0
+        System.out.println(result2);
+
+        result2++;
+        // result is now 1
+        System.out.println(result2);
+
+        result2 = -result2;
+        // result is now -1
+        System.out.println(result2);
+
+        boolean success = false;
+        // false
+        System.out.println(success);
+        // true
+        System.out.println(!success);
     }
 }
