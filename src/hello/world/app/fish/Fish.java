@@ -8,20 +8,19 @@ package hello.world.app.fish;
 import hello.world.app.fish.FishInterface;
 
 /**
- *
+ * Lesson on how to create classes and interfaces
  * @author jeffrey
  */
 class Fish implements FishInterface {
     
-    int speed = 0;
-    
-    
+    public static int speed = 0;
+   
     public void speedUp(int increment) {
          speed = speed + increment;   
     }
     
-    void printStates() {
-        System.out.println(" speed:" + 
+    public static void main(String[] args) {
+        System.out.println("speed:" + 
             speed);
     }
 }
